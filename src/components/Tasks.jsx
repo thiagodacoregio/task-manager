@@ -18,7 +18,7 @@ function Tasks({ tasks, onTaskClick, deleteTask }) {
         <li key={task.id} className="flex gap-2">
           <button
             onClick={() => onTaskClick(task.id)}
-            className={`bg-slate-400 text-left w-full items-center gap-2 text-white p-2 rounded-md ${
+            className={`bg-slate-400 flex text-left w-full items-center gap-2 text-white p-2 rounded-md ${
               task.isCompleted && "line-through"
             }`}
           >
